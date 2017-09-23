@@ -1,0 +1,60 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Hobbies
+    <div class="pull-right"><?= $this->Html->link(__('<i class="fa fa-plus"></i> Novo'), ['action' => 'add'], ['class'=>'btn btn-success btn-xs', 'escape' => false]) ?></div>
+  </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <div class="box-header">
+          <h3 class="box-title"><?= __('Lista de') ?> Hobbies</h3>
+          <div class="box-tools">
+            <form action="<?php echo $this->Url->build(); ?>" method="POST">
+              <div class="input-group input-group-sm"  style="width: 180px;">
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-responsive no-padding">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('nome') ?></th>
+                <th><?= __('Ações') ?></th>
+              </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($hobbies as $hobby): ?>
+              <tr>
+                <td><?= $this->Number->format($hobby->id) ?></td>
+                <td><?= h($hobby->nome) ?></td>
+                <td class="actions" style="white-space:nowrap">
+                  <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $hobby->id], ['class'=>'btn btn-info btn-xs']) ?>
+                  <?= $this->Html->link(__('Editar'), ['action' => 'edit', $hobby->id], ['class'=>'btn btn-warning btn-xs']) ?>
+                  <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $hobby->id], ['confirm' => __('Tem certeza que quer excluir este registro?'), 'class'=>'btn btn-danger btn-xs']) ?>
+                </td>
+              </tr>
+            <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <ul class="pagination pagination-sm no-margin pull-right">
+            <?php echo $this->Paginator->numbers(); ?>
+          </ul>
+        </div>
+      </div>
+      <!-- /.box -->
+    </div>
+  </div>
+</section>
+<!-- /.content -->

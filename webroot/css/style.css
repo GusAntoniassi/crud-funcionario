@@ -1,0 +1,8 @@
+.github-wrapper img {
+    width: 42px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.github-wrapper.small img {
+    width: 27px;
+}
