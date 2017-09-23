@@ -1,0 +1,22 @@
+2017-09-23 12:41:21 Error: [Cake\Core\Exception\MissingPluginException] Plugin CakePtbr could not be found. in C:\xampp\htdocs\CRUD funcionario\vendor\cakephp\cakephp\src\Core\Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'CakePtbr',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\CRUD funcionario\config\bootstrap.php(225): Cake\Core\Plugin::load('CakePtbr', Array)
+#1 C:\xampp\htdocs\CRUD funcionario\bin\cake.php(32): include('C:\\xampp\\htdocs...')
+#2 {main}
+
+
+2017-09-23 09:42:30 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Bakeall" could not be found. in C:\xampp\htdocs\CRUD funcionario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php on line 327
+Exception Attributes: array (
+  'class' => 'Bakeall',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\CRUD funcionario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(226): Cake\Console\ShellDispatcher->findShell('Bakeall')
+#1 C:\xampp\htdocs\CRUD funcionario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 C:\xampp\htdocs\CRUD funcionario\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 C:\xampp\htdocs\CRUD funcionario\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
