@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7703acb0182584248268da0fcfba396",
+    "content-hash": "4c726fb2a060d59f10fc54349c7ed8f3",
     "packages": [
         {
             "name": "aura/intl",
@@ -54,21 +54,21 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.4.13",
+            "version": "3.5.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "f9cd66fe071d1cfb2fa6aec94ee37a7fd0916c03"
+                "reference": "46ead510e101a6c89e18eeb2504fcdd48fdf039e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/f9cd66fe071d1cfb2fa6aec94ee37a7fd0916c03",
-                "reference": "f9cd66fe071d1cfb2fa6aec94ee37a7fd0916c03",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/46ead510e101a6c89e18eeb2504fcdd48fdf039e",
+                "reference": "46ead510e101a6c89e18eeb2504fcdd48fdf039e",
                 "shasum": ""
             },
             "require": {
                 "aura/intl": "^3.0.0",
-                "cakephp/chronos": "^1.0.0",
+                "cakephp/chronos": "^1.0.1",
                 "ext-intl": "*",
                 "ext-mbstring": "*",
                 "php": ">=5.6.0",
@@ -95,7 +95,7 @@
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "^3.0",
-                "phpunit/phpunit": "^5.7|^6.0"
+                "phpunit/phpunit": "^5.7.14|^6.0"
             },
             "suggest": {
                 "ext-openssl": "To use Security::encrypt() or have secure CSRF token generation.",
@@ -104,7 +104,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cake\\": "src"
+                    "Cake\\": "src/"
                 },
                 "files": [
                     "src/Core/functions.php",
@@ -136,36 +136,35 @@
                 "rapid-development",
                 "validation"
             ],
-            "time": "2017-08-17T03:06:44+00:00"
+            "time": "2019-04-24T02:05:09+00:00"
         },
         {
             "name": "cakephp/chronos",
-            "version": "1.1.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/chronos.git",
-                "reference": "0621b191334d8dcb56907688986dd24eb8c38234"
+                "reference": "ba2bab98849e7bf29b02dd634ada49ab36472959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/chronos/zipball/0621b191334d8dcb56907688986dd24eb8c38234",
-                "reference": "0621b191334d8dcb56907688986dd24eb8c38234",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/ba2bab98849e7bf29b02dd634ada49ab36472959",
+                "reference": "ba2bab98849e7bf29b02dd634ada49ab36472959",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=5.6"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1",
-                "cakephp/cakephp-codesniffer": "~2.3",
+                "cakephp/cakephp-codesniffer": "^3.0",
                 "phpbench/phpbench": "@dev",
-                "phpstan/phpstan": "^0.6.4",
-                "phpunit/phpunit": "<6.0"
+                "phpunit/phpunit": "<6.0 || ^7.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Cake\\Chronos\\": "src"
+                    "Cake\\Chronos\\": "src/"
                 },
                 "files": [
                     "src/carbon_compat.php"
@@ -193,7 +192,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-04-27T01:27:49+00:00"
+            "time": "2019-11-30T02:33:19+00:00"
         },
         {
             "name": "cakephp/localized",
@@ -597,83 +596,6 @@
             "time": "2017-01-11T18:01:15+00:00"
         },
         {
-            "name": "kriswallsmith/assetic",
-            "version": "v1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
-                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1",
-                "symfony/process": "~2.1|~3.0"
-            },
-            "conflict": {
-                "twig/twig": "<1.27"
-            },
-            "require-dev": {
-                "leafo/lessphp": "^0.3.7",
-                "leafo/scssphp": "~0.1",
-                "meenie/javascript-packer": "^1.1",
-                "mrclay/minify": "<2.3",
-                "natxet/cssmin": "3.0.4",
-                "patchwork/jsqueeze": "~1.0|~2.0",
-                "phpunit/phpunit": "~4.8 || ^5.6",
-                "psr/log": "~1.0",
-                "ptachoire/cssembed": "~1.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0",
-                "twig/twig": "~1.23|~2.0",
-                "yfix/packager": "dev-master"
-            },
-            "suggest": {
-                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
-                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
-                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
-                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
-                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
-                "twig/twig": "Assetic provides the integration with the Twig templating engine"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Assetic": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
-                }
-            ],
-            "description": "Asset Management for PHP",
-            "homepage": "https://github.com/kriswallsmith/assetic",
-            "keywords": [
-                "assets",
-                "compression",
-                "minification"
-            ],
-            "time": "2016-11-11T18:43:20+00:00"
-        },
-        {
             "name": "maiconpinto/cakephp-adminlte-theme",
             "version": "1.0.7",
             "source": {
@@ -825,16 +747,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +765,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -868,55 +790,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
-        },
-        {
-            "name": "robloach/component-installer",
-            "version": "0.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/908a859aa7c4949ba9ad67091e67bac10b66d3d7",
-                "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "kriswallsmith/assetic": "1.*",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "composer/composer": "1.*@alpha",
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                },
-                "class": "ComponentInstaller\\ComponentInstallerPlugin"
-            },
-            "autoload": {
-                "psr-0": {
-                    "ComponentInstaller": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Loach",
-                    "homepage": "http://robloach.net"
-                }
-            ],
-            "description": "Allows installation of Components via Composer.",
-            "time": "2015-08-10T12:35:38+00:00"
+            "time": "2020-03-23T09:12:05+00:00"
         },
         {
             "name": "robmorgan/phinx",
@@ -983,47 +857,6 @@
                 "phinx"
             ],
             "time": "2017-06-05T13:30:19+00:00"
-        },
-        {
-            "name": "select2/select2",
-            "version": "4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/select2/select2.git",
-                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
-                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "*"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "dist/js/select2.js"
-                    ],
-                    "styles": [
-                        "dist/css/select2.css"
-                    ],
-                    "files": [
-                        "dist/js/select2.js",
-                        "dist/js/i18n/*.js",
-                        "dist/css/select2.css"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Select2 is a jQuery based replacement for select boxes.",
-            "homepage": "https://select2.github.io/",
-            "time": "2016-05-27T01:16:06+00:00"
         },
         {
             "name": "symfony/config",
@@ -1320,55 +1153,6 @@
             "time": "2017-06-14T15:44:48+00:00"
         },
         {
-            "name": "symfony/process",
-            "version": "v3.3.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
-                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-07-29T21:54:42+00:00"
-        },
-        {
             "name": "symfony/yaml",
             "version": "v3.3.9",
             "source": {
@@ -1425,16 +1209,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.6.0",
+            "version": "1.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490"
+                "reference": "a85e67b86e9b8520d07e6415fcbcb8391b44a75b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/2faa791b66bac33ca40031d8bce03b7dc8143490",
-                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/a85e67b86e9b8520d07e6415fcbcb8391b44a75b",
+                "reference": "a85e67b86e9b8520d07e6415fcbcb8391b44a75b",
                 "shasum": ""
             },
             "require": {
@@ -1447,17 +1231,27 @@
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "phpunit/phpunit": "^5.7.16 || ^6.0.8",
+                "php-http/psr7-integration-tests": "dev-master",
+                "phpunit/phpunit": "^5.7.16 || ^6.0.8 || ^7.2.7",
                 "zendframework/zend-coding-standard": "~1.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev",
-                    "dev-develop": "1.7-dev"
+                    "dev-release-1.8": "1.8.x-dev"
                 }
             },
             "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php"
+                ],
                 "psr-4": {
                     "Zend\\Diactoros\\": "src/"
                 }
@@ -1473,7 +1267,8 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-09-13T14:47:08+00:00"
+            "abandoned": "laminas/laminas-diactoros",
+            "time": "2019-08-06T17:53:53+00:00"
         }
     ],
     "packages-dev": [
@@ -1917,6 +1712,7 @@
                     "homepage": "http://www.acci.cz"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2014-04-08T15:00:19+00:00"
         },
         {
@@ -1961,6 +1757,7 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
@@ -2079,6 +1876,83 @@
                 "schema"
             ],
             "time": "2017-05-16T21:06:09+00:00"
+        },
+        {
+            "name": "kriswallsmith/assetic",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1|~3.0"
+            },
+            "conflict": {
+                "twig/twig": "<1.27"
+            },
+            "require-dev": {
+                "leafo/lessphp": "^0.3.7",
+                "leafo/scssphp": "~0.1",
+                "meenie/javascript-packer": "^1.1",
+                "mrclay/minify": "<2.3",
+                "natxet/cssmin": "3.0.4",
+                "patchwork/jsqueeze": "~1.0|~2.0",
+                "phpunit/phpunit": "~4.8 || ^5.6",
+                "psr/log": "~1.0",
+                "ptachoire/cssembed": "~1.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.23|~2.0",
+                "yfix/packager": "dev-master"
+            },
+            "suggest": {
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "twig/twig": "Assetic provides the integration with the Twig templating engine"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ],
+            "time": "2016-11-11T18:43:20+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2203,6 +2077,55 @@
                 "shell"
             ],
             "time": "2017-07-29T19:30:02+00:00"
+        },
+        {
+            "name": "robloach/component-installer",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/component-installer.git",
+                "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/908a859aa7c4949ba9ad67091e67bac10b66d3d7",
+                "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "kriswallsmith/assetic": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "1.*@alpha",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "class": "ComponentInstaller\\ComponentInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ComponentInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Loach",
+                    "homepage": "http://robloach.net"
+                }
+            ],
+            "description": "Allows installation of Components via Composer.",
+            "abandoned": "oomphinc/composer-installers-extender",
+            "time": "2015-08-10T12:35:38+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -2346,6 +2269,47 @@
             "time": "2015-10-13T18:44:15+00:00"
         },
         {
+            "name": "select2/select2",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/select2/select2.git",
+                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/select2/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
+                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "dist/js/select2.js"
+                    ],
+                    "styles": [
+                        "dist/css/select2.css"
+                    ],
+                    "files": [
+                        "dist/js/select2.js",
+                        "dist/js/i18n/*.js",
+                        "dist/css/select2.css"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Select2 is a jQuery based replacement for select boxes.",
+            "homepage": "https://select2.github.io/",
+            "time": "2016-05-27T01:16:06+00:00"
+        },
+        {
             "name": "symfony/finder",
             "version": "v3.3.9",
             "source": {
@@ -2391,6 +2355,55 @@
                 }
             ],
             "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-29T21:54:42+00:00"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v3.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
+                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-29T21:54:42+00:00"
         },
